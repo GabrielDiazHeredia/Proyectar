@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/base/_tipografia.scss","../scss/layout/_header.scss","../scss/styles.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;EACI;EACA;;;ACEJ;EACI;EACA","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_tipografia.scss","../scss/styles.scss"],"names":[],"mappings":"AAAA;EACI;;;ACGJ;EACI;EAEA;EACA;EAGA","file":"styles.css"}
