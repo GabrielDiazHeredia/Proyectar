@@ -1,12 +1,35 @@
-body {
-  font-family: "Inter", sans-serif;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/img/indexHeaderFoto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .indexHeaderContenedorInferior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  gap: 1rem;
+  color: #fff;
+}
+header .indexHeaderContenedorInferior .indexIsotipo {
+  width: 5rem;
 }
 
-.indexHeaderContenedorInferior {
-  background-image: url(../img/indexHeaderFoto.jpg);
-  height: 100vh;
-  height: 100vh;
-  padding: 1rem;
+main {
+  padding: 4rem 2rem;
+  background-color: #0e086a;
+  color: #fff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.oscurecerFondo {
+  background-color: rgb 0 0 0/1;
 }
 
 /*# sourceMappingURL=styles.css.map */

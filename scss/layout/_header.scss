@@ -1,8 +1,36 @@
+@use "../abstract/variables" as *;
+
+
+
 header {
-    background-image: url("/img/indexHeaderFoto.jpg");
+    background-image:
+    linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+         url("/img/indexHeaderFoto.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+
+   
+
+
+
+    .indexHeaderContenedorInferior {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 2rem;
+        gap: 1rem;
+        color: $colorBlanco;
+
+      
+
+        .indexIsotipo {
+            width: 5rem;
+        }
+    }
 }

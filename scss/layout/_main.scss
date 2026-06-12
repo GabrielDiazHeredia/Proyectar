@@ -1,0 +1,7 @@
+@use "../abstract/variables" as *;
+
+main{
+    padding: 4rem 2rem;
+    background-color: $colorAzulOscuro;
+    color: $colorBlanco;
+}
