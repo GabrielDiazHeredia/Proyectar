@@ -1,13 +1,8 @@
-*
-
-
-.indexHeaderContenedorInferior {
-    display: flex;
-    background-image: url(../img/indexHeaderFoto.jpg);
+header {
+    background-image: url("/img/indexHeaderFoto.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-
-    padding: 1rem;
+    width: 100%;
 }
-

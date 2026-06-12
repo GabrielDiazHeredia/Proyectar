@@ -1,5 +1,8 @@
-@use "base/tipografia";
 @use "layout/header";
-@use "abstract/variables.scss"
+@use "abstract/variables.scss" as *;
+
+body{
+    font-family: $fuentePrincipal;
+}
 
 
