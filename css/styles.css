@@ -1,5 +1,5 @@
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/img/indexHeaderFoto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/indexHeaderFoto.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,8 +7,8 @@ header {
 header .indexHeaderContenedorInferior {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
   height: 100vh;
   padding: 2rem;
   gap: 1rem;
@@ -17,11 +17,22 @@ header .indexHeaderContenedorInferior {
 header .indexHeaderContenedorInferior .indexIsotipo {
   width: 5rem;
 }
+header .indexHeaderContenedorInferior h1 {
+  font-size: 45px;
+}
 
 main {
   padding: 4rem 2rem;
   background-color: #0e086a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
+}
+main h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 body {
