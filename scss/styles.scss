@@ -1,13 +1,5 @@
 @use "base/tipografia";
 @use "layout/header";
+@use "abstract/variables.scss"
 
 
-.indexHeaderContenedorInferior {
-    background-image: url(../img/indexHeaderFoto.jpg);
-    
-    height: 100vh;
-    height: 100vh;
-
-    
-    padding: 1rem;
-}
