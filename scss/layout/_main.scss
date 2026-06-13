@@ -1,23 +1,27 @@
 @use "../abstract/variables" as *;
 
-main{
+main {
+    
     padding: 4rem 2rem;
-    background-color: $colorAzulOscuro;
+    background-color: $colorBlanco;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: $colorBlanco;
+    color: $colorNegro;
 
 
 
-    .indexMain{
-      
-    }
-
-    h2{
+    h2 {
         font-size: 28px;
         font-weight: bold;
         margin-bottom: 2rem;
     }
+    .indexMain{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .indexMainArticleNovedad {
+        background-color: $colorBlanco;
+        color: $colorNegro;
+    }
 }
-
