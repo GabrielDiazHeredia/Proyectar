@@ -1,6 +1,8 @@
 @use "abstract/variables.scss" as *;
 @use "layout/header";
 @use "layout/main";
+@use "layout/footer";
+
 body{
     font-family: $fuentePrincipal;
 }

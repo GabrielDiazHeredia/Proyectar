@@ -1,0 +1,12 @@
+@use "../abstract/variables" as *;
+
+footer {
+    
+    padding: 2rem 1rem;
+    background-color: $colorAzulOscuro;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $colorBlanco;
+
+}
