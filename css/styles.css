@@ -13,9 +13,6 @@ header .indexHeaderContenedorInferior {
   color: #fff;
   gap: 2rem;
 }
-header .indexHeaderContenedorInferior .indexIsotipo {
-  width: 5rem;
-}
 header .indexHeaderContenedorInferior h1 {
   font-size: 20px;
 }
@@ -26,17 +23,18 @@ header .indexHeaderContenedorInferior p {
   font-size: 16px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   header .indexHeaderContenedorInferior {
     padding: 0 4rem;
   }
 }
 @media (min-width: 800px) {
   header .indexHeaderContenedorInferior {
-    padding: 0 10rem;
+    padding: 0 20rem;
   }
 }
 main {
+  margin-top: 3%;
   padding: 2rem 1rem;
   background-color: #fff;
   background-size: cover;
@@ -45,21 +43,25 @@ main {
   color: #010101;
 }
 main h3 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 main a {
   text-decoration: none;
 }
-main .indexMainArticleNovedad {
+main .indexContenedorArticle {
   display: flexbox;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main .indexMainArticleNovedad {
   background-color: #dadee2;
   border-radius: 0.5rem;
   color: #010101;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem 0;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 main .indexMainArticleNovedad button {
   border-radius: 0.5rem;
@@ -127,14 +129,16 @@ main .cursosTitulo {
 }
 @media (min-width: 800px) {
   main {
-    padding: 4rem 10rem;
+    padding: 4rem 20rem;
   }
   main .cursosMainContenedor {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 }
 footer {
-  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 2rem 1rem;
   background-color: #0A2540;
   background-size: cover;
@@ -144,7 +148,7 @@ footer {
   gap: 1rem;
 }
 footer img {
-  width: 5rem;
+  width: 3rem;
 }
 footer h4 {
   font-size: 16px;
@@ -156,18 +160,22 @@ footer P {
   font-size: 12px;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 400px) {
   footer {
     padding: 2rem 4rem;
   }
 }
 @media (min-width: 800px) {
   footer {
-    padding: 2rem 10rem;
+    padding: 2rem 20rem;
   }
 }
 body {
   font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  padding: 0 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

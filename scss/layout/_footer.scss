@@ -1,8 +1,9 @@
 @use "../abstract/variables" as *;
 
 footer {
-    display: flexbox;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 2rem 1rem;
     background-color: $colorAzulOscuro;
     background-size: cover;
@@ -14,7 +15,8 @@ footer {
 
 
     img{
-        width: 5rem;
+        width: 3rem;
+
    
     }
     h4{
@@ -31,7 +33,7 @@ footer {
 }
 
 
-@media (min-width: 450px) {
+@media (min-width: 400px) {
 
     footer {
         padding: 2rem 4rem;
@@ -45,7 +47,7 @@ footer {
 
     footer {
 
-        padding: 2rem 10rem;
+        padding: 2rem 20rem;
 
     }   
 

@@ -1,7 +1,7 @@
 @use "../abstract/variables" as *;
 
 main {
-
+    margin-top: 3%;
     padding: 2rem 1rem;
     background-color: $colorBlanco;
     background-size: cover;
@@ -12,32 +12,30 @@ main {
 
 
     h3 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 600;
         margin-bottom: 2rem;
     }
 
-    p{
-    
+    a {
+        text-decoration: none;
+
     }
 
-     a {
-            text-decoration: none;
-           
-        }
-
-    .indexMain {}
+    .indexContenedorArticle {
+        display: flexbox;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
 
     .indexMainArticleNovedad {
-        display: flexbox;
-
         background-color: $colorGrisClaro;
         border-radius: 0.5rem;
-        ;
         color: $colorNegro;
-        padding: 1rem;
+        padding: 2rem;
         margin: 1rem 0;
-        gap: 1rem;
+        gap: 1.5rem;
 
         button {
             border-radius: 0.5rem;
@@ -73,7 +71,8 @@ main {
 
     .cursosMainContenedor {
         margin-bottom: 4rem;
-         button {
+
+        button {
             border-radius: 0.5rem;
             background-color: $colorBlanco;
             border-color: unset;
@@ -86,8 +85,8 @@ main {
                 background-color: $colorAzulHover;
                 color: $colorBlanco;
             }
-         }
-        
+        }
+
     }
 
     .cursosTitulo {
@@ -99,10 +98,10 @@ main {
 
     }
 
-   
-     
 
-    
+
+
+
 }
 
 
@@ -133,10 +132,10 @@ main {
 
     main {
 
-        padding: 4rem 10rem;
+        padding: 4rem 20rem;
 
         .cursosMainContenedor {
-            margin-bottom: 8rem;
+            margin-bottom: 4rem;
 
         }
 

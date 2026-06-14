@@ -2,6 +2,7 @@
 
 
 
+
 header {
     background-image:
         linear-gradient(rgba(0, 0, 0, .8),
@@ -28,11 +29,6 @@ header {
 
 
 
-        .indexIsotipo {
-            width: 5rem;
-        }
-
-
         h1 {
             font-size: 20px;
         }
@@ -45,9 +41,13 @@ header {
             font-size: 16px;
         }
     }
+
+
+
+
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
 
     header {
         .indexHeaderContenedorInferior {
@@ -63,8 +63,8 @@ header {
 
     header {
         .indexHeaderContenedorInferior {
-            padding: 0 10rem;
+            padding: 0 20rem;
         }
-    }
 
+    }
 }
