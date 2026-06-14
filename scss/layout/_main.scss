@@ -17,6 +17,15 @@ main {
         margin-bottom: 2rem;
     }
 
+    p{
+    
+    }
+
+     a {
+            text-decoration: none;
+           
+        }
+
     .indexMain {}
 
     .indexMainArticleNovedad {
@@ -61,6 +70,39 @@ main {
             object-fit: cover;
         }
     }
+
+    .cursosMainContenedor {
+        margin-bottom: 4rem;
+         button {
+            border-radius: 0.5rem;
+            background-color: $colorBlanco;
+            border-color: unset;
+            font-family: $fuentePrincipal;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+                background-color: $colorAzulHover;
+                color: $colorBlanco;
+            }
+         }
+        
+    }
+
+    .cursosTitulo {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+        gap: 1rem;
+
+    }
+
+   
+     
+
+    
 }
 
 
@@ -74,9 +116,13 @@ main {
 
             img {
                 height: 400px;
-               
+
                 object-fit: cover;
             }
+        }
+
+        .cursosMainContenedor {
+            margin-bottom: 6rem;
         }
 
     }
@@ -89,6 +135,10 @@ main {
 
         padding: 4rem 10rem;
 
-    }
+        .cursosMainContenedor {
+            margin-bottom: 8rem;
 
+        }
+
+    }
 }

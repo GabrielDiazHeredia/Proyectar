@@ -49,6 +49,9 @@ main h3 {
   font-weight: 600;
   margin-bottom: 2rem;
 }
+main a {
+  text-decoration: none;
+}
 main .indexMainArticleNovedad {
   display: flexbox;
   background-color: #dadee2;
@@ -83,6 +86,29 @@ main .indexCarousel img {
   width: 100%;
   object-fit: cover;
 }
+main .cursosMainContenedor {
+  margin-bottom: 4rem;
+}
+main .cursosMainContenedor button {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  border-color: unset;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+main .cursosMainContenedor button:hover {
+  background-color: #2D6CDF;
+  color: #fff;
+}
+main .cursosTitulo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
 
 @media (min-width: 450px) {
   main {
@@ -95,10 +121,16 @@ main .indexCarousel img {
     height: 400px;
     object-fit: cover;
   }
+  main .cursosMainContenedor {
+    margin-bottom: 6rem;
+  }
 }
 @media (min-width: 800px) {
   main {
     padding: 4rem 10rem;
+  }
+  main .cursosMainContenedor {
+    margin-bottom: 8rem;
   }
 }
 footer {
