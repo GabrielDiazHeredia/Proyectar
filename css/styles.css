@@ -4,79 +4,138 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 header .indexHeaderContenedorInferior {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
-  padding: 2rem;
-  gap: 1rem;
+  padding: 1rem;
   color: #fff;
+  gap: 2rem;
 }
-
 header .indexHeaderContenedorInferior .indexIsotipo {
   width: 5rem;
 }
-
 header .indexHeaderContenedorInferior h1 {
-  font-size: 45px;
-  font-weight: bold;
+  font-size: 20px;
+}
+header .indexHeaderContenedorInferior h2 {
+  font-size: 42px;
+}
+header .indexHeaderContenedorInferior p {
+  font-size: 16px;
 }
 
+@media (min-width: 400px) {
+  header .indexHeaderContenedorInferior {
+    padding: 0 4rem;
+  }
+}
+@media (min-width: 800px) {
+  header .indexHeaderContenedorInferior {
+    padding: 0 10rem;
+  }
+}
 main {
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   background-color: #fff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #010101;
 }
-
-main h2 {
+main h3 {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
-
 main .indexMainArticleNovedad {
   display: flexbox;
-  background-color: #c4c4c4;
+  background-color: #dadee2;
   border-radius: 0.5rem;
   color: #010101;
   padding: 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   gap: 1rem;
 }
-
 main .indexMainArticleNovedad button {
   border-radius: 0.5rem;
   background-color: #fff;
+  border-color: unset;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 600;
   padding: 0.5rem 1rem;
 }
-
 main .indexMainArticleNovedad button:hover {
-  background-color: #0a3584;
+  background-color: #2D6CDF;
   color: #fff;
 }
+main .indexMainArticleNovedad button h4 {
+  font-size: 16;
+  font-weight: 600;
+}
+main .indexCarousel {
+  margin: 2rem 0;
+}
+main .indexCarousel img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
 
+@media (min-width: 450px) {
+  main {
+    padding: 2rem 4rem;
+  }
+  main .indexCarousel {
+    margin: 2rem 0;
+  }
+  main .indexCarousel img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 800px) {
+  main {
+    padding: 4rem 10rem;
+  }
+}
 footer {
+  display: flexbox;
   padding: 2rem 1rem;
-  background-color: #0e086a;
+  background-color: #0A2540;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  gap: 1rem;
+}
+footer img {
+  width: 5rem;
+}
+footer h4 {
+  font-size: 16px;
+}
+footer h5 {
+  font-size: 14px;
+}
+footer P {
+  font-size: 12px;
 }
 
+@media (min-width: 450px) {
+  footer {
+    padding: 2rem 4rem;
+  }
+}
+@media (min-width: 800px) {
+  footer {
+    padding: 2rem 10rem;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
 }
-
-
 
 /*# sourceMappingURL=styles.css.map */
