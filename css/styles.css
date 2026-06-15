@@ -1,5 +1,5 @@
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/indexHeaderFoto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/indexHeaderFoto.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@ main .indexMainArticleNovedad button {
   border-radius: 0.5rem;
   background-color: #fff;
   border-color: unset;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -95,7 +95,7 @@ main .cursosMainContenedor button {
   border-radius: 0.5rem;
   background-color: #fff;
   border-color: unset;
-  font-family: "Inter", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -171,11 +171,7 @@ footer P {
   }
 }
 body {
-  font-family: "Inter", sans-serif;
-}
-
-.navbar {
-  padding: 0 10rem;
+  font-family: "Manrope", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
