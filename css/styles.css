@@ -25,10 +25,10 @@ header .indexHeaderContenedorInferior p {
 
 @media (min-width: 450px) {
   header .indexHeaderContenedorInferior {
-    padding: 0 4rem;
+    padding: 0 6rem;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 890px) {
   header .indexHeaderContenedorInferior {
     padding: 0 20rem;
   }
@@ -80,10 +80,10 @@ main .indexMainArticleNovedad button h4 {
   font-size: 16;
   font-weight: 600;
 }
-main .indexCarousel {
+main .indexCarusel {
   margin: 2rem 0;
 }
-main .indexCarousel img {
+main .indexCarusel img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -116,10 +116,10 @@ main .cursosTitulo {
   main {
     padding: 2rem 6rem;
   }
-  main .indexCarousel {
+  main .indexCarusel {
     margin: 2rem 0;
   }
-  main .indexCarousel img {
+  main .indexCarusel img {
     height: 400px;
     object-fit: cover;
   }
@@ -129,7 +129,7 @@ main .cursosTitulo {
 }
 @media (min-width: 890px) {
   main {
-    padding: 4rem 20rem;
+    padding: 2rem 20rem;
   }
   main .cursosMainContenedor {
     margin-bottom: 4rem;
@@ -139,6 +139,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 1rem;
   background-color: #0A2540;
   background-size: cover;
@@ -168,6 +169,27 @@ footer P {
 @media (min-width: 890px) {
   footer {
     padding: 2rem 20rem;
+  }
+}
+.indexCarusel {
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.indexCarusel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .indexCarousel {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .indexCarousel {
+    max-width: 1000px;
   }
 }
 body {
