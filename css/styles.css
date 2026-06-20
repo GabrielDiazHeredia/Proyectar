@@ -23,7 +23,7 @@ header .indexHeaderContenedorInferior p {
   font-size: 16px;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 600px) {
   header .indexHeaderContenedorInferior {
     padding: 0 6rem;
   }
@@ -34,7 +34,7 @@ header .indexHeaderContenedorInferior p {
   }
 }
 main {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 2rem 1rem;
   background-color: #fff;
   background-size: cover;
@@ -49,6 +49,12 @@ main h3 {
 }
 main a {
   text-decoration: none;
+  color: #5a5757;
+  font-weight: bold;
+}
+main a a:hover {
+  color: #2D6CDF;
+  text-decoration: underline;
 }
 main .indexContenedorArticle {
   display: flexbox;
@@ -112,9 +118,9 @@ main .cursosTitulo {
   gap: 1rem;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 600px) {
   main {
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
   }
   main .indexCarusel {
     margin: 2rem 0;
@@ -132,7 +138,7 @@ main .cursosTitulo {
     padding: 2rem 20rem;
   }
   main .cursosMainContenedor {
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
   main .indexCarusel {
     margin: 1rem 0;
@@ -168,7 +174,7 @@ footer P {
   font-size: 12px;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
   footer {
     padding: 2rem 6rem;
   }
