@@ -34,7 +34,7 @@ header .indexHeaderContenedorInferior p {
   }
 }
 main {
-  margin-top: 3%;
+  margin-top: 2rem;
   padding: 2rem 1rem;
   background-color: #fff;
   background-size: cover;
@@ -84,9 +84,9 @@ main .indexCarusel {
   margin: 2rem 0;
 }
 main .indexCarusel img {
-  height: 250px;
+  height: 400px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 main .cursosMainContenedor {
   margin-bottom: 4rem;
@@ -120,8 +120,8 @@ main .cursosTitulo {
     margin: 2rem 0;
   }
   main .indexCarusel img {
-    height: 400px;
-    object-fit: cover;
+    height: 500px;
+    object-fit: contain;
   }
   main .cursosMainContenedor {
     margin-bottom: 6rem;
@@ -133,6 +133,13 @@ main .cursosTitulo {
   }
   main .cursosMainContenedor {
     margin-bottom: 4rem;
+  }
+  main .indexCarusel {
+    margin: 1rem 0;
+  }
+  main .indexCarusel img {
+    height: 600px;
+    object-fit: contain;
   }
 }
 footer {

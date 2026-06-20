@@ -1,7 +1,7 @@
 @use "../abstract/variables" as *;
 
 main {
-    margin-top: 3%;
+    margin-top: 2rem;
     padding: 2rem 1rem;
     background-color: $colorBlanco;
     background-size: cover;
@@ -61,11 +61,11 @@ main {
 
     .indexCarusel {
         margin: 2rem 0;
-
+       
         img {
-            height: 250px;
+            height: 400px;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
     }
 
@@ -114,9 +114,9 @@ main {
             margin: 2rem 0;
 
             img {
-                height: 400px;
+                height: 500px;
 
-                object-fit: cover;
+                object-fit: contain;
             }
         }
 
@@ -137,6 +137,16 @@ main {
         .cursosMainContenedor {
             margin-bottom: 4rem;
 
+        }
+
+        .indexCarusel {
+            margin: 1rem 0;
+
+            img {
+                height: 600px;
+
+                object-fit: contain;
+            }
         }
 
     }
