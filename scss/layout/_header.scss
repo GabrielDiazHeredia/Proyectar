@@ -1,16 +1,24 @@
-@use "../abstract/variables" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 
 
 
 header {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, .8),
-            rgba(0, 0, 0, .8)),
-        url("../img/indexHeaderFoto.jpg");
+    background-image: url("../img/indexHeaderFoto.jpg");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+    .cursosHeader{
+    background-image: url("../img/indexHeaderFoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    position: relative;
+
+    }
 
 
 
@@ -19,27 +27,12 @@ header {
     .indexHeaderContenedorInferior {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        @include displayFlex(center, center);
         height: 100vh;
         padding: 1rem;
 
         color: $colorBlanco;
         gap: 2rem;
-
-
-
-
-        h1 {
-            font-size: 20px;
-        }
-
-        h2 {
-            font-size: 42px;
-        }
-
-        p {
-            font-size: 16px;
-        }
     }
 
 
@@ -47,7 +40,7 @@ header {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
     header {
         .indexHeaderContenedorInferior {

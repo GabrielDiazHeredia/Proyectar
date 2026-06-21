@@ -1,11 +1,13 @@
-@use "abstract/variables.scss" as *;
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+@use "base/reset";
+@use "base/utilities";
+@use "base/tipografias";    
+
 @use "layout/header";
 @use "layout/main";
 @use "layout/footer";
 
 @use "components/carusel";
-
-body{
-    font-family: $fuentePrincipal;
-}
 

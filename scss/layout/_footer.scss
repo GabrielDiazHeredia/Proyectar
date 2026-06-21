@@ -1,54 +1,45 @@
-@use "../abstract/variables" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 1rem;
     background-color: $colorAzulOscuro;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+    font-family: $fuentePrincipal;
     color: $colorBlanco;
-    gap: 1rem;;
 
-
-
-    img{
-        width: 3rem;
-
-    }
-    h4{
-        font-size: 16px;
-    }
-    h5{
-        font-size: 14px;;
+    h6{
+        font-size: 0.75rem;
     }
 
-
-    P{
-        font-size: 12px;
+    p{
+        font-size: 0.75rem;
+    }
+    img {
+        width: 2.8rem;
+        height: 2rem;
     }
 }
 
-
+// Tablet
 @media (min-width: 500px) {
+     footer {
+         padding: 4 6rem;;
+         margin: 0 auto;
+     }
+ }
 
-    footer {
-        padding: 2rem 6rem;
 
-        
+ //Desktop
+ @media (min-width: 800px) {
+     footer {
+         padding: 4 20rem;;
+         margin: 0 auto;
+     }
+
+    
     }
-
-}
-
-@media (min-width: 890px) {
-
-    footer {
-
-        padding: 2rem 20rem;
-
-    }   
-
-}

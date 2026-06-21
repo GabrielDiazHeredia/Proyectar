@@ -1,4 +1,6 @@
-@use "../abstract/variables" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 
 main {
     margin-top: 1rem;
@@ -11,11 +13,7 @@ main {
 
 
 
-    h3 {
-        font-size: 32px;
-        font-weight: 600;
-        margin-bottom: 2rem;
-    }
+ 
 
     a {
         text-decoration: none;
@@ -47,25 +45,8 @@ main {
         gap: 1.5rem;
 
         button {
-            border-radius: 0.5rem;
-            background-color: $colorBlanco;
-            border-color: unset;
-            font-family: $fuentePrincipal;
-            font-size: 12px;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-
-            &:hover {
-                background-color: $colorAzulHover;
-                color: $colorBlanco;
-            }
-
-
-            h4 {
-                
-                font-size: 16;
-                font-weight: 600;
-            }
+            @include button;
+            align-content: center;
         }
     }
 
@@ -83,19 +64,12 @@ main {
         margin-bottom: 4rem;
 
         button {
-            border-radius: 0.5rem;
-            background-color: $colorBlanco;
-            border-color: unset;
-            font-family: $fuentePrincipal;
-            font-size: 12px;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-
-            &:hover {
-                background-color: $colorAzulHover;
-                color: $colorBlanco;
-            }
+             @include button;
+            align-content: center;
+        
         }
+
+    
 
     }
 
@@ -103,19 +77,18 @@ main {
         display: flex;
         flex-direction: column;
         padding: 1rem 0;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
         gap: 1rem;
 
     }
+ 
+    .mainAcordion{
 
-
-
-
-
+    }
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
     main {
         padding: 1rem 6rem;

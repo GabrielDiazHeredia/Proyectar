@@ -1,29 +1,78 @@
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colorBlanco {
+  color: #fff;
+}
+
+.oscurecerFondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/indexHeaderFoto.jpg");
+  background-image: url("../img/indexHeaderFoto.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+header .cursosHeader {
+  background-image: url("../img/indexHeaderFoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  position: relative;
 }
 header .indexHeaderContenedorInferior {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   padding: 1rem;
   color: #fff;
   gap: 2rem;
 }
-header .indexHeaderContenedorInferior h1 {
-  font-size: 20px;
-}
-header .indexHeaderContenedorInferior h2 {
-  font-size: 42px;
-}
-header .indexHeaderContenedorInferior p {
-  font-size: 16px;
-}
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   header .indexHeaderContenedorInferior {
     padding: 0 6rem;
   }
@@ -41,11 +90,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   color: #010101;
-}
-main h3 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 2rem;
 }
 main a {
   text-decoration: none;
@@ -81,10 +125,11 @@ main .indexMainArticleNovedad button {
 main .indexMainArticleNovedad button:hover {
   background-color: #2D6CDF;
   color: #fff;
+  transform: translateY(-2px);
+  opacity: 0.8;
 }
-main .indexMainArticleNovedad button h4 {
-  font-size: 16;
-  font-weight: 600;
+main .indexMainArticleNovedad button {
+  align-content: center;
 }
 main .indexCarusel {
   margin: 2rem 0;
@@ -109,16 +154,20 @@ main .cursosMainContenedor button {
 main .cursosMainContenedor button:hover {
   background-color: #2D6CDF;
   color: #fff;
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+main .cursosMainContenedor button {
+  align-content: center;
 }
 main .cursosTitulo {
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   gap: 1rem;
 }
-
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main {
     padding: 1rem 6rem;
   }
@@ -149,39 +198,37 @@ main .cursosTitulo {
   }
 }
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem;
   background-color: #0A2540;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+}
+footer h6 {
+  font-size: 0.75rem;
+}
+footer p {
+  font-size: 0.75rem;
 }
 footer img {
-  width: 3rem;
-}
-footer h4 {
-  font-size: 16px;
-}
-footer h5 {
-  font-size: 14px;
-}
-footer P {
-  font-size: 12px;
+  width: 2.8rem;
+  height: 2rem;
 }
 
 @media (min-width: 500px) {
   footer {
-    padding: 2rem 6rem;
+    padding: 4 6rem;
+    margin: 0 auto;
   }
 }
-@media (min-width: 890px) {
+@media (min-width: 800px) {
   footer {
-    padding: 2rem 20rem;
+    padding: 4 20rem;
+    margin: 0 auto;
   }
 }
 .indexCarusel {
@@ -204,9 +251,6 @@ footer P {
   .indexCarousel {
     max-width: 1000px;
   }
-}
-body {
-  font-family: "Manrope", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
