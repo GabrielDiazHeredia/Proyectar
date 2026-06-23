@@ -54,30 +54,23 @@ header {
   height: 100vh;
   position: relative;
 }
-header .cursosHeader {
-  background-image: url("../img/indexHeaderFoto.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30vh;
-  position: relative;
-}
 header .indexHeaderContenedorInferior {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
-  padding: 1rem;
+  padding: 2rem 1rem;
   color: #fff;
   gap: 2rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   header .indexHeaderContenedorInferior {
     padding: 0 6rem;
   }
 }
-@media (min-width: 890px) {
+@media (min-width: 1020px) {
   header .indexHeaderContenedorInferior {
     padding: 0 20rem;
   }
@@ -101,17 +94,21 @@ main a a:hover {
   text-decoration: underline;
 }
 main .indexContenedorArticle {
-  display: flexbox;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
   gap: 1rem;
 }
 main .indexMainArticleNovedad {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #dadee2;
   border-radius: 0.5rem;
   color: #010101;
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem 0;
-  gap: 1.5rem;
+  gap: 0.75rem;
 }
 main .indexMainArticleNovedad button {
   border-radius: 0.5rem;
@@ -131,13 +128,12 @@ main .indexMainArticleNovedad button:hover {
 main .indexMainArticleNovedad button {
   align-content: center;
 }
-main .indexCarusel {
-  margin: 2rem 0;
-}
-main .indexCarusel img {
-  height: 400px;
-  width: 100%;
-  object-fit: contain;
+main .contenedorCarusel {
+  display: flex;
+  justify-content: center;
+  background-color: #010101;
+  padding: 1rem;
+  gap: 1rem;
 }
 main .cursosMainContenedor {
   margin-bottom: 4rem;
@@ -167,7 +163,15 @@ main .cursosTitulo {
   margin: 2rem 0;
   gap: 1rem;
 }
-@media (min-width: 500px) {
+main .contenedorMain {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
   main {
     padding: 1rem 6rem;
   }
@@ -175,14 +179,14 @@ main .cursosTitulo {
     margin: 2rem 0;
   }
   main .indexCarusel img {
-    height: 500px;
+    height: 0px;
     object-fit: contain;
   }
   main .cursosMainContenedor {
     margin-bottom: 6rem;
   }
 }
-@media (min-width: 890px) {
+@media (min-width: 1020px) {
   main {
     padding: 2rem 20rem;
   }
@@ -208,7 +212,7 @@ footer {
   font-family: "Manrope", sans-serif;
   color: #fff;
 }
-footer h6 {
+footer h5 {
   font-size: 0.75rem;
 }
 footer p {
@@ -219,13 +223,13 @@ footer img {
   height: 2rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   footer {
     padding: 4 6rem;
     margin: 0 auto;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1020px) {
   footer {
     padding: 4 20rem;
     margin: 0 auto;
@@ -244,12 +248,12 @@ footer img {
 
 @media (min-width: 768px) {
   .indexCarousel {
-    max-width: 700px;
+    max-width: 1000px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1020px) {
   .indexCarousel {
-    max-width: 1000px;
+    max-width: 1020px;
   }
 }
 

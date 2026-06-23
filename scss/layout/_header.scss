@@ -11,14 +11,7 @@ header {
     height: 100vh;
     position: relative;
 
-    .cursosHeader{
-    background-image: url("../img/indexHeaderFoto.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30vh;
-    position: relative;
-
-    }
+    
 
 
 
@@ -27,9 +20,9 @@ header {
     .indexHeaderContenedorInferior {
         display: flex;
         flex-direction: column;
-        @include displayFlex(center, center);
+        @include displayFlex(center, flex-start);
         height: 100vh;
-        padding: 1rem;
+        padding: 2rem 1rem;
 
         color: $colorBlanco;
         gap: 2rem;
@@ -40,7 +33,7 @@ header {
 
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
 
     header {
         .indexHeaderContenedorInferior {
@@ -52,7 +45,7 @@ header {
 
 
 
-@media (min-width: 890px) {
+@media (min-width: 1020px) {
 
     header {
         .indexHeaderContenedorInferior {
