@@ -75,6 +75,12 @@ header .indexHeaderContenedorInferior {
     padding: 0 20rem;
   }
 }
+header.pagesHeader {
+  height: 20vh;
+  background-image: none;
+  background-color: #133B5C;
+}
+
 main {
   margin-top: 1rem;
   padding: 2rem 1rem;
@@ -175,14 +181,7 @@ main .contenedorMain {
   main {
     padding: 1rem 6rem;
   }
-  main .indexCarusel {
-    margin: 2rem 0;
-  }
-  main .indexCarusel img {
-    height: 0px;
-    object-fit: contain;
-  }
-  main .cursosMainContenedor {
+  .cursosMainContenedor {
     margin-bottom: 6rem;
   }
 }
@@ -192,13 +191,6 @@ main .contenedorMain {
   }
   main .cursosMainContenedor {
     margin-bottom: 10rem;
-  }
-  main .indexCarusel {
-    margin: 1rem 0;
-  }
-  main .indexCarusel img {
-    height: 600px;
-    object-fit: contain;
   }
 }
 footer {
